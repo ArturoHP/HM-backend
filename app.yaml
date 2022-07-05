@@ -13,5 +13,3 @@ resources:
 
 network:
   session_affinity: true
-  forwarded_ports:
-    - 3002
