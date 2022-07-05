@@ -2,11 +2,7 @@
   "name": "hm-backend",
   "version": "0.0.0",
   "scripts": {
-    "ng": "ng",
-    "start": "ng serve",
-    "build": "ng build",
-    "test": "ng test",
-    "lint": "ng lint"
+    "start": "node index.js"
   },
   "private": true,
   "dependencies": {
