@@ -9,9 +9,13 @@ resources:
     volume_type: tmpfs
     size_gb: 0.5
 
-  spec:
-    ports:
-    - number: 8080
-      name: http-port
-      protocol: HTTP
-    resolution: DNS
+kind: Service
+metadata:
+  name: myservice
+spec:
+  ports:
+  - port: 3002
+    name: database
+    appProtocol: https
+  - port: 80
+    name: http-web
