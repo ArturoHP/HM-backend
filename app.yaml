@@ -1,21 +1,8 @@
 
-runtime: nodejs14
-resources:
-  cpu: 2
-  memory_gb: 2.3
-  disk_size_gb: 10
-  volumes:
-  - name: ramdisk1
-    volume_type: tmpfs
-    size_gb: 0.5
+runtime: nodejs
+env: flex
 
-kind: Service
-metadata:
-  name: myservice
-spec:
-  ports:
-  - port: 3002
-    name: database
-    appProtocol: https
-  - port: 80
-    name: http-web
+network:
+  session_affinity: true
+  forwarded_ports:
+    - 3002
