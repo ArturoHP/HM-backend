@@ -60,9 +60,9 @@ app.use(express.static("public"));
 var router = require('./api');
 app.use('/api', router);
 
-app.listen(port, '10.0.0.11');
-console.log("Escuchando: " , '10.0.0.11');
+//app.listen(port, '10.0.0.11');
+//console.log("Escuchando: " , '10.0.0.11');
 
-/*app.listen(port, () => {
+app.listen(port, () => {
     console.log(`El servidor está inicializado en el puerto ${port}`);
-});*/
+});
