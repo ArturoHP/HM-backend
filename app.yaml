@@ -1,4 +1,4 @@
-env: flex
+
 runtime: nodejs14
 resources:
   cpu: 2
@@ -9,7 +9,4 @@ resources:
     volume_type: tmpfs
     size_gb: 0.5
 
-ports:
- - target: 3002
-   published: 3002
-   mode: host
+port: 3002
