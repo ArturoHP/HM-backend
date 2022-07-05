@@ -8,6 +8,3 @@ resources:
   - name: ramdisk1
     volume_type: tmpfs
     size_gb: 0.5
-    
-AppInfoExternal:
-  port: 3002
