@@ -8,3 +8,10 @@ resources:
   - name: ramdisk1
     volume_type: tmpfs
     size_gb: 0.5
+
+spec:
+  ports:
+  - number: 8080
+    name: http-port
+    protocol: HTTP
+  resolution: DNS
